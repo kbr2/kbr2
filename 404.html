@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
   <title>Korenna Barto Reynard</title>
-  <meta http-equiv="refresh" content="2; url=http://www.korennabartoreynard.com/">
+  <meta http-equiv="refresh" content="3; url=http://www.korennabartoreynard.com/">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="description"
         content="Korenna Barto Reynard is not a PhD or licensed psychotherapist. Protect yourself with this information."/>
@@ -43,12 +43,25 @@
 </head>
 
 <body>
-
-<div class="page">
-  <center>
-    <h1>Korenna Barto Reynard</h1>
-    <p>Redirecting...</p>
-  </center>
-</div>
+  <div class="page">
+    <center>
+      <h1>Korenna Barto Reynard</h1>
+      <p>Redirecting<span id="loading">.</span></p>
+    </center>
+  </div>
+  
+  <script>
+    $(document).ready( function() {
+      var x=0; 
+      setInterval(function() {
+        var dots = ""; 
+        x++; 
+        for (var y=0; y < x%3; y++) {
+            dots+=".";
+        } 
+        $("#loading-dots").text(dots);
+      } , 500);
+    });
+  </script>
 </body>
 </html>
